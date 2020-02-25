@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+/* BY Mastrayasa */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body{
+	/* background-image:url(gambar/bg5.png);   */
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
+	line-height:16px;
+	color:#454545;
+}
+.clearfix{
+	clear:both;
+}
+a{
+	color:#454545;
+}
+.wrap{
+	width:600px;
+	margin:0 auto;
+	background:#fff;
+	padding:0px;
+	border:1px solid #ccc;
+	border-radius: 4px;
+	overflow:hidden;
+}
+.header{
+	padding:20px 20px;
+	background-color:#f68e1f;
+	color:#fff;
+	font-weight:normal; 
+}
+.menu{
+	height:36px;
+	background-color:#9c560c; 
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none 
+}
+.menu ul > li { 
+	float: left; 
+	margin: 0 0 0 1px;
+	padding: 0; 
+	color: #fff; 
+	cursor: pointer
+}
+.menu ul > li a{
+	padding: 10px 14px; 
+	display:block;
+	color:#fff;
+	text-decoration:none;
+}
+.menu ul li a:hover { 
+	background: #d6760f; 
+}
+.main{
+	background-color:#fff;   
+	padding-bottom:20px;
+}
+.main .sidebar{
+	width:180px;
+	float:left;
+	padding:0 10px;
+}
+.main .sidebar h2{
+	font-weight:normal;
+	font-size:14px;
+	background:#f68e1f;
+	color:#fff;
+	padding:5px 10px;
+}
+.main .sidebar ul{
+	padding:0 10px;
+}
+.main .sidebar ul li{
+	padding:4px 0;
+}
+.main .sidebar img{
+	max-width: 100%
+}
+.main .content{
+	width:380px;
+	padding:10px;
+	float:left;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-galeri img{
+	padding: 1px;
+	border:1px solid #9c560c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer{
+	padding:20px;
+	text-align:center;
+	background:#f0bd87;
+	border-top:4px solid #e59b4c
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table {
+	font-size: 12px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddd;
+	border-collapse: collapse;
+	margin: 10px 0px;
+	width:100%;
+}
+table th{
+	color: #514e4e;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0.5em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+
+}
+table td{
+	padding: 0.2em;
+	vertical-align: top;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-collapse: collapse;
+	border-top:1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+table.tampil tr:hover{
+	background-color:#f9f9f9;
+}
+/* FOTO */
+.tempat-foto img{
+	height:51px; 
+	width:51px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Profil */
+.content-profil h1{
+	text-align: center;
+}
+.img-profil{
+	border-radius: 500px;
+	padding: 2px;
+	border:1px solid #ccc;
+}
+
+@media (max-width: 721px) {
+	 .wrap, .main .content{
+	 	width:100%!important;
+	 } 
+	 .main .content{
+	 	display: block;
+	 	float: none;
+	 } 
+	 .main .sidebar{
+	 	display: none;
+	 }
+	 .menu{
+		height:auto;  
+	}
+	.menu ul > li { 
+		float: none;
+		text-align: center;
+	}
+	.main .content img{
+		max-width: 100%!important;
+		height: auto;
+	}
 }
