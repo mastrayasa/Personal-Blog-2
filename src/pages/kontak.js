@@ -1,5 +1,10 @@
 import React, { Component} from 'react'; 
 export default class Kontak extends Component{
+
+    constructor(props) {
+        super(props);
+        document.title = "Kontak"; 
+    }
     render(){
         return (
             <div>

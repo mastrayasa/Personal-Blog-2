@@ -4,10 +4,10 @@ export default class BukuTamu extends Component{
     constructor(props) {
     super(props);
         this.state = {
-            nama: 'Tamu',
+            nama: 'Indah',
             pekerjaan: 'Programmer',
             pesan: 'Ini adalah pesan saya',
-            kelamin: 'L',
+            kelamin: 'P',
         };
 
         this.handleChangeNama = this.handleChangeNama.bind(this);
@@ -15,9 +15,10 @@ export default class BukuTamu extends Component{
         this.handleChangePesan = this.handleChangePesan.bind(this);
         this.handleOptionChange = this.handleOptionChange.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
+        document.title = "Buku Tamu"; 
     }
 
-
+    
     handleOptionChange(event) {
     this.setState({
         kelamin: event.target.value
@@ -27,21 +28,28 @@ export default class BukuTamu extends Component{
   
 
     handleChangeNama(event) {
-        this.setState({nama: event.target.nama});
+        this.setState({nama: event.target.value});
     }
 
     handleChangePekerjaan(event) {
-        this.setState({pekerjaan: event.target.pekerjaan});
+        this.setState({pekerjaan: event.target.value});
     }
     handleChangePesan(event) {
-        this.setState({pesan: event.target.pesan});
+        this.setState({pesan: event.target.value});
     }
 
 
     handleFormSubmit(event) {
         event.preventDefault();
-  
-        console.log('You have selected:', this.state);
+        
+        alert(this.state.nama + "\n"+ this.state.pekerjaan + "\n"+ this.state.pesan + "\n"+ this.state.kelamin )
+
+        this.setState({
+            nama: '',
+            pekerjaan: '',
+            pesan: '',
+            kelamin: '',
+        });
     }
   
   
@@ -59,6 +67,7 @@ export default class BukuTamu extends Component{
                     
                     Pekerjaan<br />
                     <select value={this.state.pekerjaan} onChange={this.handleChangePekerjaan}>
+                        <option value="">-Pilih-</option> 
                         <option>Pegawai</option> 
                         <option>Montir</option> 
                         <option>Guru</option> 

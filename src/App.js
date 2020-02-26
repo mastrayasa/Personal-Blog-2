@@ -101,6 +101,8 @@ function Default() {
  
 
 function Portfolio() {
+
+  document.title = "Portfolio"; 
   let match = useRouteMatch();
 
   return (
@@ -136,6 +138,9 @@ function Portfolio() {
 
 function Topic() {
   let { topicId } = useParams();
+
+  document.title = "Portfolio > " + topicId; 
+
   return <h3>ID: {topicId}</h3>;
 }
 

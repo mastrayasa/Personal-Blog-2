@@ -1,6 +1,10 @@
 import React, { Component} from 'react'; 
 import TablePendidikan from '../componens/table-pendidikan'
 export default class Pendidikan extends Component{
+    constructor(props) {
+        super(props);
+        document.title = "Pendidikan"; 
+    }
     render(){
         return (
             <div>

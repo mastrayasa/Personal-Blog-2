@@ -2,8 +2,19 @@ import React, { Component} from 'react';
 const divStyle = {
     textAlign: 'center', 
   };
+
+
 export default class About extends Component{
+
+    constructor(props) {
+        super(props);
+        document.title = "Tentang Saya"; 
+    }
+
     render(){
+
+        
+
         return (
             <div style={divStyle}>
                 <img alt="img"  className="img-profil" width="160" align="center" src={require('../img/saya.jpg')}  />

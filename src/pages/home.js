@@ -1,7 +1,13 @@
 import React, { Component} from 'react'; 
 import TablePendidikan from '../componens/table-pendidikan'
+
+ 
 export default class Home extends Component{
-    render(){
+    constructor(props) {
+        super(props);
+        document.title = "Personal Blog 2"; 
+    }
+    render(){ 
         return (
             <div>
                 <img src={require('../img/baner.jpg')}  alt="..." data-aos="fade-up" data-aos-delay="100" />
