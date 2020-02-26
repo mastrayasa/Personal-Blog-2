@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4053e71.chunk.css",
-    "main.js": "/static/js/main.cab44aaf.chunk.js",
-    "main.js.map": "/static/js/main.cab44aaf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.69045b3e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.69045b3e.js.map",
-    "static/js/2.a4b7b0b5.chunk.js": "/static/js/2.a4b7b0b5.chunk.js",
-    "static/js/2.a4b7b0b5.chunk.js.map": "/static/js/2.a4b7b0b5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9dae727bbc28d630d6bf2f565d4caa70.js": "/precache-manifest.9dae727bbc28d630d6bf2f565d4caa70.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d4053e71.chunk.css.map": "/static/css/main.d4053e71.chunk.css.map",
-    "static/js/2.a4b7b0b5.chunk.js.LICENSE.txt": "/static/js/2.a4b7b0b5.chunk.js.LICENSE.txt",
-    "static/media/baner.jpg": "/static/media/baner.401b8046.jpg",
-    "static/media/saya.jpg": "/static/media/saya.29d46f09.jpg"
+    "main.css": "/Personal-Blog-2/static/css/main.d4053e71.chunk.css",
+    "main.js": "/Personal-Blog-2/static/js/main.ab9970aa.chunk.js",
+    "main.js.map": "/Personal-Blog-2/static/js/main.ab9970aa.chunk.js.map",
+    "runtime-main.js": "/Personal-Blog-2/static/js/runtime-main.231e44d8.js",
+    "runtime-main.js.map": "/Personal-Blog-2/static/js/runtime-main.231e44d8.js.map",
+    "static/js/2.a4b7b0b5.chunk.js": "/Personal-Blog-2/static/js/2.a4b7b0b5.chunk.js",
+    "static/js/2.a4b7b0b5.chunk.js.map": "/Personal-Blog-2/static/js/2.a4b7b0b5.chunk.js.map",
+    "index.html": "/Personal-Blog-2/index.html",
+    "precache-manifest.4b2d3936db3900dc40b6251b96bef2d2.js": "/Personal-Blog-2/precache-manifest.4b2d3936db3900dc40b6251b96bef2d2.js",
+    "service-worker.js": "/Personal-Blog-2/service-worker.js",
+    "static/css/main.d4053e71.chunk.css.map": "/Personal-Blog-2/static/css/main.d4053e71.chunk.css.map",
+    "static/js/2.a4b7b0b5.chunk.js.LICENSE.txt": "/Personal-Blog-2/static/js/2.a4b7b0b5.chunk.js.LICENSE.txt",
+    "static/media/baner.jpg": "/Personal-Blog-2/static/media/baner.401b8046.jpg",
+    "static/media/saya.jpg": "/Personal-Blog-2/static/media/saya.29d46f09.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.69045b3e.js",
+    "static/js/runtime-main.231e44d8.js",
     "static/js/2.a4b7b0b5.chunk.js",
     "static/css/main.d4053e71.chunk.css",
-    "static/js/main.cab44aaf.chunk.js"
+    "static/js/main.ab9970aa.chunk.js"
   ]
 }
