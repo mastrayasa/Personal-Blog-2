@@ -1,10 +1,10 @@
 /* BY Mastrayasa */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); 
 *, ::after, ::before {
-    box-sizing: border-box;
+	box-sizing: border-box;   
 }
 body{
-	/* background-image:url(gambar/bg5.png);   */
+	background-image:url(/bg5.png);
 	font-family: 'Roboto', sans-serif;
 	font-size:12px;
 	line-height:16px;

@@ -7,12 +7,14 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home'
 import About from './pages/about'
 import Kontak from './pages/kontak'
 import Pendidikan from './pages/pendidikan'
+import BukuTamu from './pages/bukutamu'
+ 
 
 function App() {
   return (
@@ -52,16 +54,16 @@ function App() {
         <div className="main">
           <div className="sidebar">
           <h2>Foto Foto</h2>
-					<div class="tempat-foto">
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
-						<img src={require('./img/saya.jpg')} /> 
+					<div className="tempat-foto">
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
+						<img alt="img" src={require('./img/saya.jpg')} /> 
 					</div><br/>
           </div>
           <div className="content">
@@ -76,10 +78,15 @@ function App() {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/kontak" component={Kontak} />
           <Route path="/pendidikan" component={Pendidikan} />
+          <Route path="/bukutamu" component={BukuTamu} />
           <Route component={Default} />
         </Switch>
-          </div>
+          </div><div className="clearfix"></div>
         </div> 
+
+        <div className="footer">
+				dikembangkan oleh : @mastrayasa
+			</div>
       </div>
     </Router>
   );
@@ -102,10 +109,10 @@ function Portfolio() {
 
       <ul>
         <li>
-          <Link to={`${match.url}/p/kameradroid`}>Kameradroid.com</Link>
+          <Link to={`${match.url}/kameradroid`}>Kameradroid.com</Link>
         </li>
         <li>
-          <Link to={`${match.url}/p/infosulteng`}>
+          <Link to={`${match.url}/infosulteng`}>
           Infosulteng.com
           </Link>
         </li>
@@ -116,11 +123,11 @@ function Portfolio() {
           2nd <Route> here as an "index" page for all topics, or
           the page that is shown when no topic is selected */}
       <Switch>
-        <Route path={`${match.path}/p/:topicId`}>
+        <Route path={`${match.path}/:topicId`}>
           <Topic />
         </Route>
         <Route path={match.path}>
-          <h3>Please select a topic.</h3>
+          <h3>Please select a Portfolio.</h3>
         </Route>
       </Switch>
     </div>
