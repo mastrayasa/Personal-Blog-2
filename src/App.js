@@ -14,7 +14,8 @@ import About from './pages/about'
 import Kontak from './pages/kontak'
 import Pendidikan from './pages/pendidikan'
 import BukuTamu from './pages/bukutamu'
- 
+import News from './pages/news'
+import NewsDetail from './pages/news-detail'
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">Tentang Saya</Link>
+            <Link to="/about">Tentang</Link>
           </li>
           <li>
             <Link to="/kontak">Kontak</Link>
@@ -46,7 +47,10 @@ function App() {
             <Link to="/pendidikan">Pendidikan</Link>
           </li>
           <li>
-            <Link to="/bukutamu">Buku Tamu</Link>
+            <Link to="/bukutamu">Buku Tamu</Link> 
+          </li> 
+          <li> 
+            <Link to="/news">News</Link>
           </li> 
         </ul>
         </div>
@@ -79,6 +83,9 @@ function App() {
           <Route path="/kontak" component={Kontak} />
           <Route path="/pendidikan" component={Pendidikan} />
           <Route path="/bukutamu" component={BukuTamu} />
+          <Route path="/news/:id" component={NewsDetail} />
+          <Route path="/news" component={News} />
+          
           <Route component={Default} />
         </Switch>
           </div><div className="clearfix"></div>
